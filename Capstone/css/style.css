@@ -1,0 +1,659 @@
+/* Universal Styles */
+
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  color: black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 64px;
+  border-bottom: 1px solid black;
+  background-color: lightblue;
+  font-family: Verdana;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 24px;
+}
+
+.logo img {
+  width: 70px;
+  height: 60px;
+}
+
+.logo span {
+  color: black;
+  font-family: 'Cinzel', serif;
+}
+
+nav {
+  display: inline-flex;
+  margin-right: 40px;
+}
+
+nav span {
+  padding: 20px 10px;
+  font-family: 'Cinzel', serif;
+}
+
+#header-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+
+  #header {
+    display: none;
+  }
+
+  #header-mobile {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    height: 64px;
+    max-width: 100%;
+  }
+
+  #header-mobile img {
+    width: 8%;
+  }
+
+}
+
+/* Introduction Section */
+
+#intro {
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding-top: 64px;
+}
+
+.intro-image-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 24px;
+}
+
+.intro-image-container img {
+  width: 100%;
+}
+
+.intro-content {
+  width: 450px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-content h1 {
+  color: #3B3B3B;
+  font-size: 50px;
+  font-family: 'Cinzel', serif;
+}
+
+.intro-content span {
+  color: #454545;
+  font-size: 30px;
+  font-family: 'Josefin Slab', serif;
+}
+
+.start-btn h3 {
+
+  background: #2B2B2B;
+  border: 1px solid darkgrey;
+  text-align: center;
+  border-radius: 2px;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  width: 90%;
+  font-family: 'Cinzel', serif;
+
+}
+
+.start-btn h3:active {
+  position: relative;
+  bottom: 2px;
+  background-color: lightblue;
+  color: black;
+}
+
+#intro-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+
+#intro {
+  display: none;
+}
+
+#intro-mobile {
+  display: inline;
+  background-color: lightgrey;
+  }
+
+.intro-image-container-m {
+  background-color: darkgrey;
+  height: 244px;
+  padding: 0px;
+}
+
+.intro-image-container-m img {
+  display: none;
+}
+
+.intro-container-m {
+  align-items: center;
+}
+
+.intro-content-m {
+  padding: 16px;
+}
+
+.intro-content-m h1 {
+  font-family: 'Cinzel', serif;
+  margin-top: 16px;
+}
+
+.intro-content-m span {
+  font-family: 'Josefin Slab', serif;
+}
+
+.start-btn-m h3 {
+  background: #2B2B2B;
+  border: 1px solid darkgrey;
+  text-align: center;
+  border-radius: 2px;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  width: 100%;
+  font-family: 'Cinzel', serif;
+  margin-top: 24px;
+  }
+
+.start-btn-m h3:active {
+  position: relative;
+  bottom: 2px;
+  background-color: lightblue;
+  color: black;
+  }
+
+}
+
+
+/* Orientation Section */
+
+#osection {
+  background-color: white;
+  max-width: 100%;
+  display: flex;
+}
+
+#orient-row {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+}
+
+#oside-row {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+}
+
+.orient {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px;
+}
+
+.orient img {
+  width: 100%;
+}
+
+.ocontent h2, h4 {
+  font-family: 'Cinzel', serif;
+}
+
+.ocontent p {
+  font-family: 'Josefin Slab', serif;
+}
+
+.sidelinks {
+  flex-direction: column;
+  display: flex;
+  border-left: 1px solid lightgrey;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 16px;
+  width: 90%;
+}
+
+.side-content {
+  height: 168px;
+  width: 423px;
+}
+
+.side-content h2 {
+  font-family: 'Cinzel', serif;
+}
+
+.side-content p {
+  font-family: 'Josefin Slab', serif;
+}
+
+.side-content h4 {
+  color: blue;
+  font-family: 'Cinzel', serif;
+}
+
+.orientationdate {
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.orientationdate img {
+  padding: 16px;
+  width: 35%;
+}
+
+.ourcampus {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.ourcampus img {
+  padding: 16px;
+  width: 35%;
+}
+
+.guestlecture {
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.guestlecture img {
+  padding: 16px;
+  width: 35%;
+}
+
+#osection-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+
+#osection {
+  display: none;
+}
+
+#osection-mobile {
+  display: inline;
+  width: 100%;
+}
+
+.o-image-mobile {
+  align-items: center;
+  margin: 16px;
+}
+
+.o-image-mobile img {
+  width: 100%;
+}
+
+.o-content-mobile {
+  font-family: 'Cinzel', serif;
+}
+
+.o-content-mobile h4 {
+  color: blue;
+}
+
+}
+
+/* Start Learning Section */
+
+#startlearning-section {
+  background-color: lightgrey;
+  max-width: 100%;
+  padding-bottom: 16px;
+}
+
+.start-title {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+.start-title h1 {
+  margin: 0px;
+}
+
+#start-content-container {
+  max-width: 100%;
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#start-row {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+#courses {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course {
+  background-color: white;
+  margin: 16px;
+  width: 33%;
+}
+
+.course-image-container img {
+  max-width: 100%;
+  display: flex;
+}
+
+.course .content {
+  padding-left: 24px;
+}
+
+.course h2 {
+  font-family: 'Cinzel', serif;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.course h4 {
+  font-family: 'Cinzel', serif;
+  margin-left: 16px;
+  margin-top: 8px;
+}
+
+.class-info p {
+  font-family: 'Josefin Slab', serif;
+  margin-left: 16px;
+}
+
+#startlearning-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+
+#startlearning-section {
+  display: none;
+}
+
+#startlearning-mobile {
+  display: inline;
+}
+
+.start-title-mobile {
+  border-top: 1px solid lightgrey;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+
+.courses-mobile {
+  margin-top:16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 8px;
+}
+
+.course-mobile {
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+.course-content-mobile {
+  background: lightgrey;
+  border: 1px solid darkgrey;
+  text-align: left;
+  border-radius: 2px;
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  padding: 16px;
+}
+
+.course-content-mobile h2 {
+  margin: 0px;
+}
+
+.course-content-mobile:active {
+  position: relative;
+  bottom: 2px;
+  background-color: lightblue;
+  color: black;
+  }
+
+}
+
+/* Thesis Exhibit */
+
+#thesis-section {
+  background-color: white;
+  max-width: 100%;
+}
+
+.thesis-title {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  padding-top: 32px;
+}
+
+.thesis-title h1 {
+  margin: 0px;
+}
+
+#thesis-content-container {
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+}
+
+#thesis-video-container {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+}
+
+.thesis-video {
+  flex-direction: column;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 24px;
+}
+
+.thesis-video video {
+  width: 100%;
+}
+
+.thesis-video-content h2 {
+  font-family: 'Cinzel', serif;
+}
+
+.thesis-video-content p {
+  font-family: 'Josefin Slab', serif;
+  margin: 0px;
+}
+
+#thesis-sidelinks-container {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+}
+
+.thesis-sidelinks {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 32px 16px;
+  width: 90%;
+}
+
+.side-content {
+  width: 423px;
+  height: 168px;
+}
+
+.side-content h2 {
+  font-family: 'Cinzel', serif;
+}
+
+.side-content p {
+  font-family: 'Josefin Slab', serif;
+}
+
+.fisma {
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.fisma img {
+  margin: 16px;
+  width: 35%;
+}
+
+.nowandthen {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.nowandthen img {
+  margin: 16px;
+  width: 35%;
+}
+
+#thesis-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+
+#thesis-section {
+  display: none;
+}
+
+#thesis-mobile {
+  display: inline;
+}
+
+.thesis-title-mobile {
+  border-top: 1px solid lightgrey;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+
+.thesis-title-mobile h1 {
+  margin: 32px 0px;
+}
+
+.thesis-video-mobile video {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+}
+
+/* Footer */
+
+footer {
+  display: block;
+  background-color: white;
+  border-top: 1px solid black;
+  max-width: 100%;
+}
+
+footer .footer-content {
+  color: black;
+  display: flex;
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
+}
+
+#footer {
+  padding: 24px;
+  padding-bottom: 70px;
+  padding-top: 20px;
+}
+
+#footer .copyright {
+  flex-grow: 1;
+}
+
+#footer-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+
+#footer {
+  display: none;
+}
+
+#footer-mobile {
+  background-color: white;
+  max-width: 100%;
+  color: black;
+  display: flex;
+  font-family: 'Cinzel', serif;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+}
+
+#footer-mobile span {
+  font-size: 12px;
+}
+
+}
